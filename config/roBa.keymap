@@ -70,17 +70,6 @@
         };
     };
 
-    macros {
-        tb_tg_scroll: tb_tg_scroll {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp KP_NLCK &kp KP_NLCK>;
-            label = "TB_TG_SCROLL";
-            tap-ms = <5>;
-            wait-ms = <5>;
-        };
-    };
-
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
