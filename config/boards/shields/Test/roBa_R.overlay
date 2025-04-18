@@ -1,5 +1,4 @@
 #include "roBa.dtsi"
-#include <interfaces/hid-trackball.dtsi>
 
 &default_transform {
     col-offset = <6>;
