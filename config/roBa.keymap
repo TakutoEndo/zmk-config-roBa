@@ -9,6 +9,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // JISキーコード対応表
+
 #define JP_ZKHK  GRAVE        // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
 #define JP_MINUS MINUS        // -
 #define JP_CARET EQUAL        // ^
@@ -48,7 +49,6 @@
 #define JP_RT    LS(JP_DOT)   // >
 #define JP_QMARK LS(JP_SLASH) // ?
 #define JP_UNDER LS(JP_BSLH)  // _
-
 
 &mt {
     flavor = "balanced";
@@ -96,12 +96,6 @@
 
             tap-ms = <20>;
         };
-td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
-        };
     };
 
     keymap {
@@ -127,10 +121,10 @@ td0: tap_dance_0 {
 
         FUNCTION {
             bindings = <
-&trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(NUMBER_8)                                  &kp LS(NUMBER_9)       &kp LS(EXCLAMATION)       &kp JP_AT      &kp DOUBLE_QUOTES  &kp LS(NUMBER_4)
-&trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET      &trans      &kp UNDERSCORE  &kp RIGHT_BRACKET      &kp AT_SIGN               &kp HASH          &kp DOLLAR         &kp PERCENT
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(LEFT_BRACKET)  &trans      &trans          &kp RS(RIGHT_BRACKET)  &kp RS(NON_US_BACKSLASH)  &kp LCTRL         &kp RS(AT_SIGN)    &kp RS(SLASH)
-&trans        &trans        &trans        &trans        &trans                &trans      &trans          &trans                                                                                &kp PIPE
+&trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(NUMBER_8)                                  &kp LS(NUMBER_9)       &kp LS(EXCLAMATION)       &kp JP_AT  &kp DOUBLE_QUOTES  &kp LS(NUMBER_4)
+&trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET      &trans      &kp UNDERSCORE  &kp RIGHT_BRACKET      &kp AT_SIGN               &kp HASH   &kp DOLLAR         &kp PERCENT
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(LEFT_BRACKET)  &trans      &trans          &kp RS(RIGHT_BRACKET)  &kp RS(NON_US_BACKSLASH)  &kp LCTRL  &kp RS(AT_SIGN)    &kp RS(SLASH)
+&trans        &trans        &trans        &trans        &trans                &trans      &trans          &trans                                                                         &kp PIPE
             >;
         };
 
