@@ -100,6 +100,7 @@
         tap_dance_generic: tap_dance_generic {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <2>;  // パラメータ2つ（1回目・2回目）
+            bindings = <&none>, <&none>;
         };
     };
 
