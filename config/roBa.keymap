@@ -123,8 +123,8 @@
             bindings = <
 &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(NUMBER_8)                                  &kp LS(NUMBER_9)       &kp LS(EXCLAMATION)       &kp JP_AT  &kp DOUBLE_QUOTES  &kp LS(NUMBER_4)
 &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET      &trans      &kp UNDERSCORE  &kp RIGHT_BRACKET      &kp AT_SIGN               &kp HASH   &kp DOLLAR         &kp PERCENT
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(LEFT_BRACKET)  &trans      &trans          &kp RS(RIGHT_BRACKET)  &kp RS(NON_US_BACKSLASH)  &kp LCTRL  &kp RS(AT_SIGN)    &kp RS(SLASH)
-&trans        &trans        &trans        &trans        &trans                &trans      &trans          &trans                                                                         &kp PIPE
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(LEFT_BRACKET)  &trans      &trans          &kp RS(RIGHT_BRACKET)  &kp RS(NON_US_BACKSLASH)  &kp LCTRL  &kp RS(AT_SIGN)    &kp JP_BSLH
+&trans        &trans        &trans        &trans        &trans                &trans      &trans          &trans                                                                         &kp JP_YEN
             >;
         };
 
