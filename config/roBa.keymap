@@ -96,6 +96,20 @@
 
             tap-ms = <20>;
         };
+td_brackets_left: tap_dance_brackets_left
+ {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp JP_LPAR>, <&kp JP_LBKT>;
+        };
+td_brackets_right: tap_dance_brackets_right
+ {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp JP_RPAR>, <&kp JP_RBKT>;
+        };
     };
 
     keymap {
