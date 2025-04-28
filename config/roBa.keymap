@@ -134,6 +134,13 @@
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&kp LCTRL>, <&kp LS(LCTRL)>;
         };
+
+        semicoron_coron: semicoron_coron {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SEMICORON_CORON";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp SQT>;
+        };
     };
 
     keymap {
@@ -142,7 +149,7 @@
         DEFAULT_LAYER {
             bindings = <
 &kp Q   &kp W  &kp E         &kp R            &kp T                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A   &kp S  &kp D         &kp F            &kp G        &kp ESCAPE             &kp MINUS           &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
+&kp A   &kp S  &kp D         &kp F            &kp G        &kp ESCAPE             &trans              &kp H        &kp J  &kp K      &kp L    &lt 3 MINUS
 &kp Z   &kp X  &kp C         &kp V            &kp B        &td_brackets_left      &td_brackets_right  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &trans  &mo 4  &kp LEFT_WIN  &shift_controll  &lt 1 SPACE  &kp LEFT_ALT           &kp BACKSPACE       &lt 2 ENTER                             &kp DEL
             >;
@@ -160,7 +167,7 @@
         FUNCTION {
             bindings = <
 &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                      &kp LS(N7)  &kp EQUAL         &kp LBKT    &kp LS(INT3)  &kp INT3
-&trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans      &trans  &kp LS(N4)  &kp LS(N5)        &kp LS(N6)  &kp LS(SQT)   &kp SQT
+&trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans      &trans  &kp LS(N4)  &kp LS(N5)        &kp LS(N6)  &kp LS(SQT)   &semicoron_coron
 &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &trans  &kp LS(N1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(INT1)  &kp INT1
 &trans        &trans        &trans        &trans        &trans  &trans      &trans  &trans                                                  &trans
             >;
