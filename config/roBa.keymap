@@ -164,7 +164,7 @@
 &trans  &trans  &kp LEFT_WIN  &kp LEFT_SHIFT  &lt 1 SPACE  &kp LEFT_ALT      &kp BACKSPACE       &lt 2 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         MOUSE {
